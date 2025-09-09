@@ -1,0 +1,7 @@
+<launch>
+
+    <arg name="config_path" default="$(find vins)/config/realsense_d435i/my_config.yaml"/> 
+    
+    <node name="vins_estimator" pkg="vins" type="vins_node" args="$(arg config_path)"/>
+
+</launch>
